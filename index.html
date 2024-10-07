@@ -8,21 +8,17 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #FFFFFF;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #0D0D0D;
         }
         .container {
             width: 80%;
+            max-width: 1200px;
             margin: auto;
             overflow: hidden;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            margin-top: 20px;
-            margin-bottom: 20px;
         }
         .logo {
             max-width: 150px;
@@ -30,7 +26,7 @@
             margin: 20px auto;
         }
         h1, h2 {
-            color: #007bff;
+            color: #F2E205;
             text-align: center;
         }
         h1 {
@@ -40,25 +36,54 @@
         h2 {
             font-size: 1.8em;
             margin-top: 30px;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid #D9B366;
             padding-bottom: 10px;
         }
-        ul {
+        ul, ol {
             padding-right: 20px;
         }
         li {
             margin-bottom: 10px;
         }
         .highlight {
-            background-color: #f0f8ff;
-            border-left: 4px solid #007bff;
-            padding: 10px;
+            background-color: rgba(217, 179, 102, 0.1);
+            border-right: 4px solid #D9B366;
+            padding: 15px;
             margin: 20px 0;
+            border-radius: 5px;
         }
         .footer {
             text-align: center;
             margin-top: 40px;
-            color: #666;
+            color: #D9B366;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #F2E205;
+            color: #0D0D0D;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #D9B366;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .highlight {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -158,8 +183,12 @@
             </ul>
         </div>
 
+        <div style="text-align: center;">
+            <a href="#" class="btn">לפרטים נוספים והרשמה</a>
+        </div>
+
         <div class="footer">
-            <p>לפרטים נוספים והרשמה, נא ליצור קשר עם עידו שגב.</p>
+            <p>הסדנה מועברת על ידי עידו שגב - מנכ"ל חטיבת AI בחברת KA</p>
             <p>נבנה באמצעות בינה מלאכותית | זכויות יוצרים © 2024 KA</p>
         </div>
     </div>
